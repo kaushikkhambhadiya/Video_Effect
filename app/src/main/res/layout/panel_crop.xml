@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnCropOriginal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/org_size"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCropSquare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/square_size"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCropCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/crop_op_bg"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/custom_size"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="15.0dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCrop4_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/size_4_5"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:text="4:5"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCrop5_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/size_5_6"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:text="5:6"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCrop16_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/size_16_9"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:text="16:9"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCrop4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/size4_3"
+                    android:layout_width="70.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15.0dip"
+                    android:text="4:3"
+                    android:textColor="@color/crop_op_bg"
+                    android:textSize="13.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/crop_op_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/crop_op_bg" />
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095059495297",
+    "project_id": "videoeffect-cec70",
+    "storage_bucket": "videoeffect-cec70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095059495297:android:f889345b9cfac802747080",
+        "android_client_info": {
+          "package_name": "com.capstone.videoeffect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095059495297-j0hib854c2rfj47oe01240v5oil8mkmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtGkPRl-i2Op9EHepHj8OH7WyMYS7V7do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095059495297-j0hib854c2rfj47oe01240v5oil8mkmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

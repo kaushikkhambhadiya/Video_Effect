@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pixel Effect</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="trimming_progress">Trimming your video...</string>
+    <string name="video_saved_at">Video saves at : $%1s</string>
+    <string name="no_videos">No Videos</string>
+    <string name="my_videos">My Videos</string>
+    <string name="toast_cannot_retrieve_selected_video">Cannot retrieve selected video</string>
+
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+
+    <string name="trimmed_done">video trim completed！</string>
+    <string name="trimming">trimming video...</string>
+    <string name="compressing">compressing video...</string>
+    <string name="compressed_done">video compression completed！</string>
+    <string name="video_shoot_tip">Drag to select the segment within %d second that you want to post！</string>
+    <string name="open_permission">Open permission</string>
+    <string name="video_record_des">To record a video, you need to give the camera and microphone access.</string>
+    <string name="recording">RECORD</string>
+    <string name="back">Back</string>
+    <string name="finish">Next</string>
+
+    <string name="about_us">At VideoEffect, We always want your experiences on our platform to be easy and fun.We provide best Photo and Video Editing tools.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="delete_confirm">Are you sure you want to delete?</string>
+    <string name="delete_no">CANCEL</string>
+    <string name="delete_yes">DELETE</string>
+
+</resources>

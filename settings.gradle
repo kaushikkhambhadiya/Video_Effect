@@ -1,0 +1,2 @@
+include ':app', ':gpuv'
+rootProject.name = "Video Effect"

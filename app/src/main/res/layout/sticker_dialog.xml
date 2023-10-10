@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_trans"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_dialog"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/value_8"
+            android:background="@drawable/ic_donex"
+            android:padding="5.0dip"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/back_dialog"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="Select Sticker"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/stickerlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gridStickerList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/value_10"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/c1"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/a3" />
+
+        <ImageView
+            android:id="@+id/c2"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/monster_05" />
+
+        <ImageView
+            android:id="@+id/c3"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/l8" />
+
+        <ImageView
+            android:id="@+id/c4"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/wedding06" />
+
+        <ImageView
+            android:id="@+id/c5"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/s14" />
+
+        <ImageView
+            android:id="@+id/c6"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_weight="1.0"
+            android:padding="4.0dip"
+            android:src="@drawable/b3" />
+    </LinearLayout>
+</LinearLayout>

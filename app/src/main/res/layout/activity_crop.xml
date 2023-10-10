@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/back_imag"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:background="?selectableItemBackground"
+                android:padding="5.0dip" />
+
+            <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back_imag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Crop"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/next_main"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/next_imag"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5.0dip"
+                android:src="@drawable/done" />
+
+            <TextView
+                android:id="@+id/next_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/next_imag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomRL"
+        android:layout_below="@id/top"
+        android:background="@color/white"
+        custom:imageResource="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/bottomRL"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/panel_crop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>
